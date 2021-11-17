@@ -31,8 +31,9 @@
 
 1. in repository code, choose your branch
 2. choose 'contribute', then click 'open pull request'
-3. add reviewer
-4. click 'pull request'
+3.
+4. add reviewer
+5. click 'pull request'
 
 ## Rules
 
