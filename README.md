@@ -16,11 +16,14 @@
 3. do task, then save your task
 4. git add .
 5. git commit -m "commit name"
-6. git push --set-upstream origin branch-name <!-- the next push you only need to type 'git push' -->
-7. if you make another changes:
-8. git add .
-9. git commit -m "commit name"
-10. git push
+6. update your branch based on master branch:
+7. git pull origin master
+8. git push --set-upstream origin branch-name <!-- the next push you only need to type 'git push' -->
+9. if you make another changes:
+10. git add .
+11. git commit -m "commit name"
+12. git pull origin master
+13. git push
 
 ### Pull request
 
@@ -29,7 +32,7 @@
 3. add reviewer
 4. click 'pull request'
 
-### Rules
+## Rules
 
 - only mentors can create folder 'tugas-#'
 - DO NOT DEVELOP INSIDE MASTER BRANCH
