@@ -8,21 +8,23 @@
 2. git clone https://github.com/digidevid/basic-web-development.git
 3. cd basic-web-development
 4. code .
+5. checkout to branch batch-2:
+6. git checkout batch-2
 
 ### Development process
 
-1. create branch:
+1. create your branch:
 2. git checkout -b branch-name
 3. do task, then save your task
 4. git add .
 5. git commit -m "commit name"
-6. update your branch based on master branch:
-7. git pull origin master
+6. update your branch based on branch batch-2:
+7. git pull origin batch-2
 8. git push --set-upstream origin branch-name <!-- the next push you only need to type 'git push' -->
 9. if you make another changes:
 10. git add .
 11. git commit -m "commit name"
-12. git pull origin master
+12. git pull origin batch-2
 13. git push
 
 ### Pull request
