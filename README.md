@@ -1,5 +1,7 @@
 # basic-web-development
 
+# tes edit
+
 ## Repository guides and rules
 
 - symbol # refers to a number, example: batch-2, tugas-2
@@ -26,6 +28,14 @@
 11. git commit -m "commit name"
 12. git pull origin batch-2
 13. git push
+
+### Pull request
+
+1. in repository code, choose your branch
+2. choose 'contribute', then click 'open pull request'
+3. choose base: batch-2
+4. add reviewer
+5. click 'create pull request'
 
 ### Pull request
 
