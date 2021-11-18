@@ -10,13 +10,11 @@
 2. git clone https://github.com/digidevid/basic-web-development.git
 3. cd basic-web-development
 4. code .
-5. checkout to branch batch-2:
-6. git checkout batch-2
 
 ### Development process
 
 1. create your branch:
-2. git checkout -b branch-name
+2. git checkout -b branch-name batch-2
 3. do task, then save your task
 4. git add .
 5. git commit -m "commit name"
