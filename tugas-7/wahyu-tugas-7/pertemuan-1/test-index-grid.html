@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            color: black;
+            margin: 0;
+        }
+.gridborder {
+        display: grid;
+        grid-template-areas: "side main";
+        grid-template-columns: 0.7fr 2fr;
+        }
+        nav {
+            background-color: lightblue;
+            line-height: 30px;
+            margin:0;
+        }
+        nav ul li {
+            display: inline-block;
+            padding:15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        aside {
+            grid-area: side;
+            background-color: lightcyan;
+            padding:20px;
+        }
+        aside h2 {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        aside img {
+            width: 300px;
+        }
+        main {
+            grid-area: main;
+            background-color: lightgoldenrodyellow;
+        }
+        main h2, p {
+            padding: 15px 0 10px 40px;
+        }
+        main img {
+            width: 60%;
+            padding: 15px 0 15px 150px;
+        }
+        main ul, li {
+            list-style: decimal;
+        }
+        main ul li a {
+            text-decoration: none;
+        }
+        footer{
+            border-bottom: 1px solid black;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+</body>
+<nav>
+    <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Youtube</a></li>
+    </ul>
+</nav>
+<div class="gridborder">
+<aside>
+        <h2>Popular Posts</h2>
+        <img src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto1" >
+        <img src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto2">
+        <img class="foto3" src="https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto3">
+    </aside>
+    <main>
+        <h2>Hello....</h2>
+        <p>Best Popular Post ever</p>
+        <img src="https://images.pexels.com/photos/164196/pexels-photo-164196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="foto4">
+        <p>Some text...</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos distinctio officia optio tempore quam sequi, unde earum illo excepturi aperiam?</p>
+        <p>Some Ordered List:</p>
+        <ul>
+            <li><a href="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">photo 1</a></li>
+            <li><a href="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">photo 2</a></li>
+            <li><a href="https://images.pexels.com/photos/371589/pexels-photo-371589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">photo 3</a></li>
+            <li class="li"><a href="https://images.pexels.com/photos/164196/pexels-photo-164196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=94">photo 4</a></li>
+        </ul>
+    </main>
+</div>
+    <footer>
+        footer
+    </footer>
+    <footer>
+        2021 © PT.Modern Web Development.All right reserved
+    </footer>
+</body>
+</html>

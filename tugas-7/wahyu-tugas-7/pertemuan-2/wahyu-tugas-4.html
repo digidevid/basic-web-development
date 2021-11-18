@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAHYU Tugas 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            color: black;
+            box-sizing: border-box;
+        }
+        .topcontainer {
+            background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+            width: 100%;
+            height: 100vh;
+            padding: 20px 20px 50% 20px;
+            background-repeat: no-repeat;
+        }
+        .container {
+            z-index: 1;
+            display: grid;
+            grid-template-areas: "daniel daniel jonathan  kira"
+                                 "jeanette patrick patrick  kira";
+            padding: 30px 20px 50px 20px;
+            background:linear-gradient(rgba(0,0,0,0.8), rgba(126, 97, 97, 0.5)) ,url(https://images.pexels.com/photos/3184397/pexels-photo-3184397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            width: 80%;
+            height: 100vh;
+            margin: 40px 10px 30px 150px ;
+
+        }
+        /* daniel */
+        .daniel {
+            grid-area: daniel;
+            background-color: rgba(148, 61, 248, 0.384);
+            border: 1px solid rgba(250, 246, 246, 0.4);
+            border-radius: 10px;
+            height: 47vh;
+            margin: 10px;
+        }
+
+        .daniel img {
+            z-index: 1;
+            border: 1px solid rgb(238, 170, 170);
+            border-radius: 100px;
+            float: left;
+            margin: 15px 10px 10px 20px ;
+        }
+        svg {
+            z-index: 0;
+            margin:-10.5% 0 0 49%;
+        }
+        .daniel h4 {
+            margin: 25px 0 5px 20px;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.938);
+        }
+        .daniel .bio{
+            color: rgba(255, 255, 255, 0.425);
+            font-size: 15px;
+        }
+        .daniel h3 {
+            z-index: 1;
+            margin:-21px 10px 15px 25px;
+            color: rgba(255, 255, 255, 0.938);
+            font-size: 16px;
+        }
+        .daniel .paragraf {
+            margin: 0 25px 0 25px;
+            color: rgba(255, 255, 255, 0.425);
+            font-size: 16px;
+        }
+        /* jonathan page */
+        .jonathan {
+            grid-area: jonathan;
+            background-color: rgba(9, 8, 10, 0.384);
+            border: 1px solid rgba(250, 246, 246, 0.4);
+            border-radius: 10px;
+            margin: 10px;
+            height: 47vh;
+        }
+        .jonathan img {
+            border: 1px solid rgb(238, 170, 170);
+            margin: 15px 10px 10px 20px ;
+            border-radius: 100px;
+            float: left;
+        }
+        .jonathan h4 {
+            color: rgba(255, 255, 255, 0.938);
+            margin: 25px 0 5px 20px;
+        }
+        .jonathan .bio {
+            color: rgba(255, 255, 255, 0.425);
+            font-size: 15px;
+        }
+        .jonathan h3 {
+            color: rgba(255, 255, 255, 0.938);
+            margin: 20px;
+            font-size: 16px;
+        }
+        .jonathan .paragraf {
+            margin: 0 25px 0 25px;
+            color: rgba(255, 255, 255, 0.425);
+            font-size: 16px;
+        }
+        /* kira */
+        .kira {
+            grid-area: kira;
+            background-color: rgba(202, 186, 218, 0.500);
+            border: 1px solid rgba(250, 246, 246, 0.4);
+            border-radius: 10px;
+            margin: 10px;
+            height: 90vh;
+        }
+        .kira img {
+            border: 1px solid rgb(238, 170, 170);
+            margin: 15px 10px 10px 20px ;
+            border-radius: 100px;
+            float: left;
+        }
+        .kira h4 {
+            color: rgba(27, 26, 26, 0.938);
+            margin: 25px 0 5px 20px;
+        }
+        .kira .bio {
+            color: rgba(44, 31, 31, 0.507);
+            font-size: 15px;
+        }
+        .kira h3 {
+            color: rgba(27, 26, 26, 0.938);
+            margin: 20px;
+            font-size: 16px;
+        }
+        .kira .paragraf {
+            color: rgba(3, 3, 3, 0.61);
+            margin: 0 25px 0 25px;
+            font-size: 16px;
+        }
+        /* patrick */
+        .patrick {
+            grid-area: patrick;
+            background-color: rgba(9, 8, 10, 0.384);
+            border: 1px solid rgba(250, 246, 246, 0.4);
+            border-radius: 10px;
+            margin: 10px;
+            height: 42vh;
+        }
+        .patrick img {
+            border: 1px solid rgb(238, 170, 170);
+            margin: 15px 10px 10px 20px ;
+            border-radius: 100px;
+            float: left;
+        }
+        .patrick h4 {
+            color: rgba(255, 255, 255, 0.938);
+            margin: 25px 0 5px 20px;
+        }
+        .patrick .bio {
+            color: rgba(255, 255, 255, 0.425);
+            font-size: 15px;
+        }
+        .patrick h3 {
+            color: rgba(255, 255, 255, 0.938);
+            margin: 20px;
+            font-size: 16px;
+        }
+        .patrick .paragraf {
+            color: rgba(255, 255, 255, 0.425);
+            margin: 0 25px 0 25px;
+            font-size: 16px;
+        }
+        /* jeanette */
+        .jeanette {
+            grid-area: jeanette;
+            background-color: rgba(167, 140, 194, 0.384);
+            border: 1px solid rgba(250, 246, 246, 0.4);
+            border-radius: 10px;
+            margin: 10px;
+            height: 42vh;
+        }
+        .jeanette img {
+            border: 1px solid rgb(238, 170, 170);
+            margin: 15px 10px 10px 20px ;
+            border-radius: 100px;
+            float: left;
+        }
+        .jeanette h4 {
+            color: rgba(20, 18, 18, 0.938);
+            margin: 25px 0 5px 20px;
+            font-size: 14px;
+        }
+        .jeanette .bio{
+            color: rgba(44, 31, 31, 0.507);
+            font-size: 14px;
+        }
+        .jeanette h3 {
+            color: rgba(15, 13, 13, 0.938);
+            margin: 20px;
+            font-size: 16px;
+        }
+        .jeanette .paragraf {
+            color: rgba(24, 22, 22, 0.692);
+            margin: 0 25px 0 25px;
+            font-size: 16px;
+        }
+        </style>
+</head>
+<body>
+<div class="topcontainer">
+    <div class="container">
+        <div class="daniel">
+            <img src="image-daniel.jpg" alt="Daniel">
+            <h4>Daniel Clifford</h4>
+            <p class="bio">Verified Graduate</p>
+            <svg  width="120" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M104 102V59.727H84.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42   -9.287 6.125-13.61C95.01 25.86 98.909 22.257 104 19.375V0c-9.758 4.27-17.712 9.874-23.864 16.813-6.151 6.939-10.712 14.545-13.681 22.818C63.485 47.904 62 59.941 62 75.74V102h42zm-62 0V59.727H22.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C33.01 25.86 36.909 22.257 42 19.375V0c-9.652 4.27-17.58 9.874-23.784 16.813C12.01 23.752 7.424 31.358 4.455 39.631 1.485 47.904 0 59.941 0 75.74V102h42z" fill="#A775F1" fill-rule="nonzero"/></svg>
+            <h3>I received a job offer mid-course, and the subjects  I learned were current, if not more so,
+            in the company I joined. I honestly feel I got every penny’s worth.</h3>
+
+            <p class="paragraf">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+            transition and have heard some people who had an amazing experience here. I signed up
+            for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+            The next 12 weeks was the best - and most grueling - time of my life. Since completing
+            the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+        <div class="jonathan">
+            <img src="image-jonathan.jpg" alt="Jonathan">
+            <h4>Jonathan Walters</h4>
+            <p class="bio">Verified Graduate</p>
+
+            <h3>The team was very supportive and kept me motivated</h3>
+
+            <p class="paragraf">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+                for a big company. This was one of the best investments I’ve made in myself. ”</p>
+            </div>
+            <div class="kira">
+                <img src="image-kira.jpg" alt="Kira">
+                <h4>Kira Whittle</h4>
+                <p class="bio">Verified Graduate</p>
+
+                <h3>Such a life-changing experience. Highly recommended!</h3>
+
+                <p class="paragraf">“ Before joining the bootcamp, I’ve <br> never written a line of code. I needed <br> structure from
+                professionals <br> who can help me learn programming <br> step by step. I was encouraged to <br> enroll by a former
+                student of theirs <br> who can only say wonderful things <br> about the program. The entire <br> curriculum and staff
+                did not <br> disappoint. They were very hands-on <br> and I never had to wait long for <br> assistance. The agile team
+                project, in <br> particular, was outstanding. It took <br> my learning to the next level in a way <br> that no tutorial
+                could ever have. In <br> fact, I’ve often referred to it during <br> interviews as an example of my <br> developent
+                experience. It certainly <br> helped me land a job as a full-stack <br> developer after receiving multiple <br> offers.
+                100% recommend!</p>
+                </div>
+            <div class="jeanette">
+                <img src="image-jeanette.jpg" alt="jeanette">
+                <h4>Jeanette Harmon</h4>
+                <p class="bio">Verified Graduate</p>
+
+                <h3>An overall wonderful and rewarding experience</h3>
+
+                <p class="paragraf">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+                while doing something I love. ”</p>
+            </div>
+            <div class="patrick">
+                <img src="image-patrick.jpg" alt="patrick">
+                <h4>Patrick Abrams</h4>
+                <p class="bio">Verified Graduate</p>
+
+                <h3>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+                learning from their experiences was easy.</h3>
+
+                <p class="paragraf">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+                gave me the confidence necessary to be able to go out in the world and present myself as a capable
+                junior developer. The standard is above the rest. You will get the personal attention you need from
+                an incredible community of smart and amazing people. ”</p>
+            </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+.nav {
+    text-align: center;
+    background-color: rgb(250, 151, 71);
+    line-height: 70px;
+}
+.side {
+    text-align: center;
+    background-color: lightblue;
+    line-height: 440px;
+    float: left;
+    padding: 0 100px 0 100px;
+}
+.main{
+    text-align: center;
+    background-color: rgb(89, 255, 125);
+    line-height: 440px;
+}
+.footer {
+    text-align: center;
+    background-color: rgb(209, 47, 147);
+    line-height: 70px;
+}

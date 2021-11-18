@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-tailwind</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        *,
+        :after,
+        :before{
+            box-sizing:border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="flex justify-content item-center min-h-screen bg-gray-800">
+    <div class="grid grid-cols-4 gap-4 py-20 px-52">
+        <div class="col-start-1 col-span-2  rounded-xl border-solid border-2 black bg-blue-900">
+            <img class="rounded-full float-left mx-5 mt-5" src="image-daniel.jpg" alt="Daniel">
+            <h4 class="z-20 font-semibold text-white mt-5">Daniel Clifford</h4>
+            <p class="z-20 text-gray-400">Verified Graduate</p>
+            <svg class="ml-96 -mt-14" width="120" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M104 102V59.727H84.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42   -9.287 6.125-13.61C95.01 25.86 98.909 22.257 104 19.375V0c-9.758 4.27-17.712 9.874-23.864 16.813-6.151 6.939-10.712 14.545-13.681 22.818C63.485 47.904 62 59.941 62 75.74V102h42zm-62 0V59.727H22.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C33.01 25.86 36.909 22.257 42 19.375V0c-9.652 4.27-17.58 9.874-23.784 16.813C12.01 23.752 7.424 31.358 4.455 39.631 1.485 47.904 0 59.941 0 75.74V102h42z" fill="#A775F1" fill-rule="nonzero"/></svg>
+            <h3 class="z-20 font-bold -mt-5 px-5 text-white">I received a job offer mid-course, and the subjects  I learned were current, if not more so,
+            in the company I joined. I honestly feel I got every penny’s worth.</h3>
+            <p class="z-20 px-7 pt-3 text-gray-300">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+            transition and have heard some people who had an amazing experience here. I signed up
+            for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+            The next 12 weeks was the best - and most grueling - time of my life. Since completing
+            the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </div>
+        <div class="rounded-xl border-solid border-2 black bg-gray-800">
+            <img class="rounded-full float-left mt-5 mx-5" src="image-jonathan.jpg" alt="Jonathan">
+            <h4 class="font-semibold text-white mt-5">Jonathan Walters</h4>
+            <p class="text-gray-400 pb-5">Verified Graduate</p>
+            <h3 class="font-bold px-3 pb-3 text-white">The team was very supportive and kept me motivated</h3>
+            <p class="px-5 text-gray-300">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+            for a big company. This was one of the best investments I’ve made in myself. ”</p>
+        </div>
+        <div class="row-span-2 rounded-xl border-solid border-2 black bg-gray-500">
+            <img class="rounded-full float-left mt-5 mx-5" src="image-kira.jpg" alt="Kira">
+            <h4 class="font-semibold text-white mt-5">Kira Whittle</h4>
+            <p class="text-gray-400 pb-5">Verified Graduate</p>
+            <h3 class="font-bold px-3 pb-3">Such a life-changing experience. Highly recommended!</h3>
+            <p class="px-3 pb-3 text-gray-300">“ Before joining the bootcamp, I’ve <br> never written a line of code. I needed <br> structure from
+            professionals <br> who can help me learn programming <br> step by step. I was encouraged to <br> enroll by a former
+            student of theirs <br> who can only say wonderful things <br> about the program. The entire <br> curriculum and staff
+            did not <br> disappoint. They were very hands-on <br> and I never had to wait long for <br> assistance. The agile team
+            project, in <br> particular, was outstanding. It took <br> my learning to the next level in a way <br> that no tutorial
+            could ever have. In <br> fact, I’ve often referred to it during <br> interviews as an example of my <br> developent
+            experience. It certainly <br> helped me land a job as a full-stack <br> developer after receiving multiple <br> offers.
+            100% recommend!</p>
+        </div>
+        <div class="rounded-xl border-solid border-2 black bg-gray-500">
+            <img class="rounded-full float-left mt-5 mx-5" src="image-jeanette.jpg" alt="jeanette">
+            <h4 class="font-semibold text-white mt-5">Jeanette Harmon</h4>
+            <p class="text-gray-400 pb-5">Verified Graduate</p>
+            <h3 class="font-bold px-3">An overall wonderful and rewarding experience</h3>
+            <p class="px-5 pt-3 text-gray-300">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+            while doing something I love. ”</p>
+        </div>
+        <div class="col-start-2 col-span-2 rounded-xl border-solid border-2 black bg-gray-800">
+            <img class="col-span-2 rounded-full float-left mt-5 mx-5" src="image-patrick.jpg" alt="patrick">
+            <h4 class="font-semibold text-white mt-5">Patrick Abrams</h4>
+            <p class="text-gray-400 pb-5">Verified Graduate</p>
+            <h3 class="font-bold px-5 pb-3 text-white">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+            learning from their experiences was easy.</h3>
+            <p class="px-5 text-gray-300">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+            gave me the confidence necessary to be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the personal attention you need from
+            an incredible community of smart and amazing people. ”</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

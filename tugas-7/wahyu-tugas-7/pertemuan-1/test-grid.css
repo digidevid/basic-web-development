@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding:0;
+    color: black;
+    font-family: sans-serif;
+}
+.grid {
+    background-color: lightblue;
+}
+.grid ul li{
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 40px;
+}
+.grid ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+.post {
+    display: grid;
+    
+}
