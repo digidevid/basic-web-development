@@ -44,3 +44,4 @@
 - each student creates their own folder inside folder 'tugas-#'
 - use format 'nama-tugas-nomor' inside folder 'tugas-#'
 - student isn't allowed to add, edit or remove files outside their own folder
+# digidev-tugas-8
