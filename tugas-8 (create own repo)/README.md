@@ -1,4 +1,4 @@
-Tugas 8 Digidev - Create New Repository (Membuat Repositori Baru)
+## Tugas 8 Digidev - Create New Repository (Membuat Repositori Baru)
 
 nama repo: digidev-tugas-8, type repo public.  
 Di root repo ada 3 folder, masing2 folder ada folder lg d dalamnya dan file juga. Silahkan buat repo di masing2 akun github. Push tugas ini k branch master. Kirimkan link repositori di grup.  
