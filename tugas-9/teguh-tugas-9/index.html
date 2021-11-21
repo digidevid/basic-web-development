@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Variabel Tugas 1
+        let bmi, berat_kg, tinggi_m;
+        // Data 1
+        // Mark = berat: 78kg, tinggi: 1.69m
+        berat_kg = 78;
+        tinggi_m = 1.69;
+        bmi = berat_kg / (tinggi_m * tinggi_m);
+        console.log("Data 1 Mark = berat: 78kg, tinggi: 1.69m - BMI: " + bmi + "");
+        // John = berat: 92kg, tinggi: 1.95m
+        berat_kg = 92;
+        tinggi_m = 1.95;
+        bmi = berat_kg / (tinggi_m * tinggi_m);
+        console.log("Data 1 John = berat: 92kg, tinggi: 1.95m - BMI: " + bmi + "");
+
+        // Data 2:
+        // Mark = berat: 95kg, tinggi: 1.88m
+        berat_kg = 95;
+        tinggi_m = 1.88;
+        bmi = berat_kg / (tinggi_m * tinggi_m);
+        console.log("Data 2 Mark = berat: 95kg, tinggi: 1.88m - BMI: " + bmi + "");
+        // John = berat: 85kg, tinggi: 1.76m
+        berat_kg = 85;
+        tinggi_m = 1.76;
+        bmi = berat_kg / (tinggi_m * tinggi_m);
+        console.log("Data 2 John = berat: 85kg, tinggi: 1.76m - BMI: " + bmi + ".");
+
+        // Variabel Tugas 2
+        let tip, bill, total_bill;
+        // Data 1
+        // Data 1: bill = 275.40
+        bill = 275.40;
+        if (bill >= 50 && bill <= 300) { //15%
+            tip = bill * 0.15;
+            total_bill = tip + bill;
+            console.log("Data 1: bill = 275.40 (15%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else if (bill > 300) { //20%
+            tip = bill * 0.2;
+            total_bill = tip + bill;
+            console.log("Data 1: bill = 275.40 (20%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else if (bill < 50) { //0%
+            tip = bill * 0;
+            total_bill = tip + bill;
+            console.log("Data 1: bill = 275.40 (0%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else { //beyond rules
+            console.log("undefined");
+        }
+        // Data 2
+        // Data 2: bill = 430
+        bill = 430;
+        if (bill >= 50 && bill <= 300) { //15%
+            tip = bill * 0.15;
+            total_bill = tip + bill;
+            console.log("Data 2: bill = 430 (15%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else if (bill > 300) { //20%
+            tip = bill * 0.2;
+            total_bill = tip + bill;
+            console.log("Data 2: bill = 430 (20%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else if (bill < 50) { //0%
+            tip = 0;
+            total_bill = tip + bill;
+            console.log("Data 2: bill = 430 (0%) - The bill was " + bill + ", the tip was " + tip + ", and the total value is " + total_bill + ".");
+        } else { //beyond rules
+            console.log("undefined");
+        }
+
+        // Variabel Tugas 3
+        let biodata;
+        // Representasikan data di atas ke dalam satu buah variabel saja.
+        biodata = [
+            {
+                nama: "Beni",
+                umur: 45,
+                pekerjaan: "AI Programmer",
+                alamat: "Silicon Valley, St. 145",
+                statusPernikahan: true,
+                hobi: ["memanah", "berkuda", "berenang"],
+            },
+            {
+                nama: "Beno",
+                umur: 46,
+                pekerjaan: "Software Engineer",
+                alamat: "Silicon Valley, St. 123",
+                statusPernikahan: false,
+                hobi: ["membaca", "bernyanyi", "menulis"],
+            },
+        ],
+            // Tampilkan value dari pekerjaan Beno ke dalam console.
+            console.log("Pekerjaan Beno: " + biodata[1].pekerjaan),
+            // Tampilkan value dari status pernikahan Beni ke dalam console.
+            console.log("Status Pernikahan Beni: " + biodata[0].statusPernikahan),
+            // Tampilkan value dari hobi Beni yang kedua ke dalam console.
+            console.log("Hobi kedua Beno: " + biodata[0].hobi[1])
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
