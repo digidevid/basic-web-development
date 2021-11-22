@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+
+  <script>
+// - BMI = berat / (tinggi x tinggi)
+// - berat (kg)
+// - tinggi (m)
+
+// - Tugas:
+// - Tampung berat dan tinggi dari Mark dan John ke dalam variabel-variabel
+// - Hitung BMI Mark dan John
+
+// - Data 1:
+// - Mark = berat: 78kg, tinggi: 1.69m
+// - John = berat: 92kg, tinggi: 1.95m
+    var markBerat = 78;
+    var markTinggi = 1.69;
+    var BMI = markBerat /( markTinggi * markTinggi)
+    console.log(BMI)
+
+    var johnBerat = 92;
+    var johnTinggi = 1.95;
+    var BMI = johnBerat /( johnTinggi * johnTinggi)
+    console.log(BMI)
+
+// - Data 2:
+// - Mark = berat: 95kg, tinggi: 1.88m
+// - John = berat: 85kg, tinggi: 1.76m
+    var markBerat = 95;
+    var markTinggi = 1.88;
+    var BMI = markBerat /( markTinggi * markTinggi)
+    console.log(BMI)
+
+    var johnBerat = 85;
+    var johnTinggi = 1.76;
+    var BMI = johnBerat /( johnTinggi * johnTinggi)
+    console.log(BMI)
+
+// 2. Steven ingin membuat kalkulator tip jika ia pergi ke restoran. Di negara nya, biasanya besar tip untuk harga 50 - 300 adalah 15%. Jika harga di atas 300, tip nya sebesar 20%. Jika harga di bawah 50 maka tidak diberi tip.
+// - Data 1: bill = 275.40
+// - Data 2: bill = 430
+// - Tugas:
+// - Hitung tip tergantung dari total harga bill. Buat variabel 'tip', dan gunakan ternary operator untuk menentukan jumlah tip.
+    var bill_1 = 275.40;
+    var bill = 300;
+    var tip_1 = 41.31; //15%
+    var tip_2 = 55.09; //20%
+    var jumblahTip = (bill_1 < bill) ? (bill_1 + tip_1) : (bill_1 + tip_2);
+    console.log(bill_1 +" < "+ bill +" = "+ jumblahTip);
+
+    var bill_2 = 430;
+    var bill = 300;
+    var tip_1 = 64.5; //15%
+    var tip_2 = 86; //20%
+    var jumblahTip = (bill_2 < bill) ? (bill_2 + tip_1) : (bill_2 + tip_2);
+    console.log(bill_2 +" < "+ bill +" = "+ jumblahTip);
+
+    // - Print string ke console yang berisi total harga, tip, dan total biaya yang harus di bayar (harga + tip). Contoh: "The bill was 275, the tip was 41.25, and the total value is 316.25".
+    var bill_1 = 275.40;
+      if (bill_1 <= 300 && bill_1 >= 50) {
+        tip = bill_1 * 0.15; //15%
+        totalBill = tip + bill_1;
+        console.log(`data-1: bill_1 = 275.40 15%, The bill was ` + bill_1 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else if (bill_1 > 300) {
+        tip = bill_1 * 0.2; //20%
+        totalBill = tip + bill_1;
+        console.log(`data-1: bill_1 = 275.40 20%, The bill was ` + bill_1 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else if (bill_1 < 50) {
+        tip = bill_1 * 0; //0%
+        totalBill = tip + bill_1;
+        console.log(`data-1: bill_1 = 275.40 20%, The bill was ` + bill_1 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else {
+        console.log(``)
+      }
+    var bill_2 = 430;
+      if (bill_2 <= 300 && bill_2 >= 50) {
+        tip = bill_2 * 0.15; //15%
+        totalBill = tip + bill_2;
+        console.log(`data-1: bill_2 = 275.40 15%, The bill was ` + bill_2 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else if (bill_2 > 300) {
+        tip = bill_2 * 0.2; //20%
+        totalBill = tip + bill_2;
+        console.log(`data-1: bill_2 = 275.40 20%, The bill was ` + bill_2 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else if (bill_2 < 50) {
+        tip = bill_2 * 0; //0%
+        totalBill = tip + bill_2;
+        console.log(`data-1: bill_2 = 275.40 20%, The bill was ` + bill_2 + ` The tip was ` + tip + ` and total value is ` + totalBill)
+      }else {
+        console.log(``)
+      }
+// 3. Dalam sebuah kamar kos terdapat 2 pria, Beni dan Beno, yang memiliki biodata yaitu nama, umur(number), pekerjaan, alamat, sudah menikah (boolean), dan hobi dimana masing-masing memiliki 3 hobi.
+      var biodata = [
+        {
+          nama: `Beni`,
+          umur: 90,
+          pekerjaan: `ngarit code`,
+          alamat: `jl.anakanakmagang`,
+          sudahMenikah: true,
+          hobi: [`menunggu senja`, `salto`, `liat awan tersenyum`],
+        },
+        {
+          nama: `Beno`,
+          umur: 15,
+          pekerjaan: `fullstack web dev at google`,
+          alamat: `jl.merdeka walk`,
+          sudahMenikah: false,
+          hobi: [`volly`, `memanah`, `bersepeda`],
+        }
+      ];
+// - Tampilkan value dari pekerjaan Beno ke dalam console.
+      console.log(`pekerjaan Beno: `+ biodata[1].pekerjaan)
+// - Tampilkan value dari status pernikahan Beni ke dalam console.
+      console.log(`pernikahan Beni: `+ biodata[0].sudahMenikah)
+// - Tampilkan value dari hobi Beni yang kedua ke dalam console.
+      console.log(`pekerjaan Beni: `+ biodata[0].hobi[1])
+  </script>
+</body>
+</html>
