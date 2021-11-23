@@ -39,19 +39,23 @@
         var bill_1 = 275.40;
         var firstCheck = (bill_1 < 50);
         var secondCheck = (bill_1 >= 50 && bill_1 <= 300);
+        // jumlah tip 1
         var tip_1 = (firstCheck) ? (bill_1 * 1) : (secondCheck) ? (bill_1 * 15 / 100) : (bill_1 * 20 / 100);
         console.log(tip_1)
+        // total 1
         var total_1 = (bill_1 + tip_1);
-        // tip 1
+        // bill, tip, dan total 1
         console.log(`Data_1: bill, The bill was ` + bill_1 + ` The tip was ` + tip_1 + ` and total value is ` + total_1 +``)
 
+        // tip 2
         var bill_2 = 430;
         var firstCheck = (bill_2 < 50);
         var secondCheck = (bill_2 >= 50 && bill_2 <= 300);
         var tip_2 = (firstCheck) ? (bill_2 * 1) : (secondCheck) ? (bill_2 * 15 / 100) : (bill_2 * 20 / 100);
         console.log(tip_2)
+        // total 2
         var total_2 = (bill_2 + tip_2);
-        // tip 2
+        // bill, tip, dan total 2
         console.log(`Data_2: bill, The bill was ` + bill_2 + ` The tip was ` + tip_2 + ` and total value is ` + total_2 +``)
         
 
@@ -74,9 +78,12 @@
                 hoby: ["Kayang", "Salto", "Rebahan"],
             }
         ]
+        // pekerjaan beno
         console.log(biodata[1].profession)
+        // status beni
         console.log(biodata[0].isMarriage)
-        console.log(biodata[0].hoby[2])
+        // hobi kedua beni
+        console.log(biodata[0].hoby[1])
 
     </script>
 </body>
