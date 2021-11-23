@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Tugas 1
+    // Data 1
+    // Mark = berat: 78kg, tinggi: 1.69m
+    // John = berat: 92kg, tinggi: 1.95m
+
+    // Mark 
+    berat_kg = 78;
+    tinggi_m = 1.69;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 1 Mark - BMI = " + bmi + "")
+    // John 
+    berat_kg = 92;
+    tinggi_m = 1.95;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 1 John - BMI = " + bmi + "")
+
+    // Data 2
+    // Mark = berat: 95kg, tinggi: 1.88m
+    // John = berat: 85kg, tinggi: 1.76m
+
+    // Mark
+    berat_kg = 95;
+    tinggi_m = 1.88;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 2 Mark - BMI = " + bmi + "")
+     // John 
+    berat_kg = 85;
+    tinggi_m = 1.76;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 2 John - BMI = " + bmi + "")
+
+    // Data 1
+    // Mark 
+    berat_kg = 78;
+    tinggi_m = 1.69;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 1 Mark - BMI = " + bmi + "")
+    //John 
+    berat_kg = 92;
+    tinggi_m = 1.95;
+    bmi = berat_kg / (tinggi_m * tinggi_m);
+    console.log = ("Data 1 John - BMI = " + bmi + "")
+
+
+    //Tugas 2
+    // Data 1
+    var bill = 275.4;
+    if (bill >= 50 && bill <= 300) {
+      var tip = bill * 0.15;
+      var total_bill = tip + bill;
+      console.log(`The bill was ${bill}, The tip was ${tip}, and the total value is ${total_bill}`);
+    } else if (bill > 300) {
+      var tip = bill * 0.2;
+      var total_bill = tip + bill
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${total_bill}`);    
+    } else if (bill < 50) {
+      var tip = bill * 0;
+      var total_bill = tip + bill
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${total_bill}`);  
+    } else {
+      console.log ("undefined")
+    }
+    // Data 2
+    var bill = 430;
+    if (bill >= 50 && bill <= 300) {
+      var tip = bill * 0.15;
+      var total_bill = tip + bill;
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tips}`);
+    } else if (bill > 300) {
+      var tip = bill * 0.2;
+      var total_bill = tip + bill
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tips}`);    
+    } else if (bill < 50) {
+      var tip = bill * 0;
+      var total_bill = tip + bill
+      console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tips}`);  
+    } else {
+      console.log ("undefined")
+    }
+
+    // Tugas 3
+    var biodata = [
+      {
+        nama: "Beni",
+        umur: 17,
+        pekerjaan: "Pegawai Swasta",
+        alamat: "Gianyar,Bali",
+        statusPernikahan: false,
+        hobi: ("makan","tidur","minum"),
+      },
+      {
+        nama: "Beno",
+        umur: 18,
+        pekerjaan: "Pegawai Negeri",
+        alamat: "Badung,Bali",
+        statusPernikahan: true,
+        hobi: ("jajan","olahraga","memasak"),
+      },
+    ];
+
+    console.log(biodata[1].pekerjaan);
+    console.log(biodata['0'].statusPernikahan);
+    console.log(biodata['0'].hobi['1']);
+
+  </script>
+
+
+
+
+</body>
+</html>
