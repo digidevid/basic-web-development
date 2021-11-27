@@ -21,4 +21,6 @@
 - Tim Merah: 97, 112, 101
 - Tim Biru: 109, 95, 106
 
-![alt text](https://github.com/digidevid/basic-web-development/blob/batch-2/tugas-11.png?raw=true)
+<!-- ![alt text](https://github.com/digidevid/basic-web-development/blob/batch-2/tugas-11.png?raw=true) -->
+
+![plot](./tugas-11.png)
