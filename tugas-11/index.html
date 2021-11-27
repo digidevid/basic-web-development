@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="red-team kolom">
+				<h1 class="title score-title">Score Red Team</h1>
+				<h1 class="title">0</h1>
+				<div class="input-container">
+					<input class="input" type="text" placeholder="first score" id="first-score-red" />
+					<input class="input" type="text" placeholder="second score" id="second-score-red" />
+					<input class="input" type="text" placeholder="third score" id="third-score-red" />
+				</div>
+			</div>
+			<div class="blue-team kolom">
+				<h1 class="title score-title">Score Blue Team</h1>
+				<h1 class="title">0</h1>
+				<div class="input-container">
+					<input class="input" type="text" placeholder="first score" id="first-score-blue" />
+					<input class="input" type="text" placeholder="second score" id="second-score-blue" />
+					<input class="input" type="text" placeholder="third score" id="third-score-blue" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<button class="calculate-button">Calculate</button>
+		</div>
+		<h1 class="result"></h1>
+	</body>
+</html>
+
+<style>
+	.container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	.kolom {
+		border: 1px solid black;
+	}
+	.red-team {
+		background-color: gray;
+		height: 500px;
+	}
+	.blue-team {
+		background-color: gray;
+	}
+	.title {
+		text-align: center;
+		font-size: 48px;
+	}
+	.score-title {
+		margin-top: 100px;
+	}
+	.input {
+		display: block;
+		margin: 0 auto;
+	}
+	.calculate-button {
+		display: block;
+		margin: 0 auto;
+		margin-top: 30px;
+		padding: 10px 20px;
+	}
+	.result {
+		text-align: center;
+	}
+</style>
