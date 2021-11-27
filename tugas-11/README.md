@@ -1,8 +1,8 @@
 # Tugas 11 Javascript DOM
 
-- Melanjutkan tugas 10 mengenai olimpiade antara tim merah dan tim biru, sekarang tugas kalian adalah menentukan pemenang dari olimpiade, tidak pada console lagi, tapi langsung di html dengan metode DOM manipulation.
+- Melanjutkan tugas 10 mengenai olimpiade antara tim merah dan tim biru, sekarang tugas kalian adalah menentukan pemenang dari olimpiade, tidak pada console lagi, tapi langsung di html dengan metode DOM manipulation. Gunakan file index.html sebagai starter code kalian.
 - Tampung nilai dari inputan skor ke dalam variabel masing-masing.
-- Ketika tombol calculate di tekan maka skor final masing-masing tim akan muncul.
+- Ketika tombol calculate di tekan maka skor final masing-masing tim akan muncul. (Sekarang skor masing-masing tim masih nol)
 - Kemudian tim yang menang akan memiliki background-color berwarna hijau, dan tim yang kalah akan memiliki background-color berwarna merah.
 - Jika skor seri, maka kedua tim akan memiliki background-color berwarna kuning.
 - Jika tidak ada pemenang, maka background-color kedua tim tetap berwarna abu-abu.
